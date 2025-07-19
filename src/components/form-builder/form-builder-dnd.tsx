@@ -6,14 +6,9 @@ import {
   DragEndEvent,
 } from "@dnd-kit/core";
 import {
-  arrayMove,
-  SortableContext,
-  verticalListSortingStrategy,
 } from "@dnd-kit/sortable";
 import { useFormStore } from "@/store/form-store";
 import { FieldType } from "@/types/form";
-import { FormCanvas } from "./form-canvas";
-import { DraggableField } from "./draggable-field";
 import { useState } from "react";
 
 interface FormBuilderDndProps {

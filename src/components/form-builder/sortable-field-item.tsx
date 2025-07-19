@@ -10,10 +10,9 @@ import { GripVertical, Edit3, Trash2, Copy } from "lucide-react";
 
 interface SortableFieldItemProps {
   field: FormField;
-  index: number;
 }
 
-export function SortableFieldItem({ field, index }: SortableFieldItemProps) {
+export function SortableFieldItem({ field }: SortableFieldItemProps) {
   const { selectedFieldId, selectField, removeField } = useFormStore();
   const {
     attributes,

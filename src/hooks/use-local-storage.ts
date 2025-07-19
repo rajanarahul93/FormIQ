@@ -5,7 +5,7 @@ const STORAGE_KEY = "formiq-autosave";
 const AUTOSAVE_INTERVAL = 30000; // 30 seconds
 
 export function useLocalStorage() {
-  const { currentForm, lastSaved } = useFormStore();
+  const { currentForm } = useFormStore();
 
   // Auto-save to localStorage
   useEffect(() => {

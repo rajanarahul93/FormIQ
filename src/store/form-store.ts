@@ -202,20 +202,20 @@ export const useFormStore = create<FormStore>((set, get) => ({
   undo: () => {
     const previousState = useHistoryStore.getState().undo();
     if (previousState) {
-      set((state) => ({
+      set({
         currentForm: previousState,
         selectedFieldId: null,
-      }));
+      });
     }
   },
 
   redo: () => {
     const nextState = useHistoryStore.getState().redo();
     if (nextState) {
-      set((state) => ({
+      set({
         currentForm: nextState,
         selectedFieldId: null,
-      }));
+      });
     }
   },
 
