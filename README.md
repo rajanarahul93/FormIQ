@@ -1,69 +1,133 @@
-# React + TypeScript + Vite
+# FormIQ Pro - Advanced Form Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A premium, frontend-only form builder and testing playground built with modern web technologies. Create, customize, and export professional forms with drag-and-drop simplicity.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+##  Features
 
-## Expanding the ESLint configuration
+###  **Dynamic Form Building**
+- **Drag & Drop Interface** - Intuitive field placement from sidebar to canvas
+- **10+ Field Types** - Text, Email, Phone, Password, Date, Number, Textarea, Select, Checkbox, Radio
+- **Visual Form Builder** - Real-time form construction with sortable fields
+- **Field Reordering** - Drag fields to reorganize form structure
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### **Advanced Configuration**
+- **Field Properties Editor** - Customize labels, placeholders, validation rules
+- **Conditional Logic** - Show/hide fields based on other field values
+- **Validation Rules** - Required fields, min/max length, custom regex patterns
+- **Bulk Operations** - Edit multiple fields simultaneously
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+###  **Smart Features**
+- **Auto-fill with Fake Data** - Populate forms with realistic sample data using Faker.js
+- **Form Templates** - 5 pre-built professional form templates
+- **Undo/Redo System** - 50-step history with full state management
+- **Auto-save** - Local storage persistence every 30 seconds
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+###  **Live Preview & Testing**
+- **Interactive Preview** - Test forms with real validation and submission
+- **Responsive Design** - Preview in desktop, tablet, and mobile modes
+- **Form Validation** - Real-time validation with error messages
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+###  **Export Options**
+- **JSON Export** - Download form configuration
+- **HTML Export** - Complete standalone HTML file with styling
+- **React Component** - Generate ready-to-use React components
+- **Copy to Clipboard** - Quick sharing of form configurations
+
+###  **Professional UI/UX**
+- **Dark/Light Theme** - System-aware theme switching with persistence
+- **Modern Design** - Clean interface using Tailwind CSS and Shadcn UI
+- **Responsive Layout** - Works perfectly on all device sizes
+- **Toast Notifications** - User feedback for all actions
+
+##  Tech Stack
+
+- **Frontend Framework**: React 18 + TypeScript
+- **Styling**: Tailwind CSS v4
+- **UI Components**: Shadcn UI
+- **State Management**: Zustand
+- **Drag & Drop**: @dnd-kit
+- **Form Handling**: React Hook Form + Zod
+- **Fake Data**: Faker.js
+- **Icons**: Lucide React
+
+##  Getting Started
+
+### Prerequisites
+
+- Node.js 20.19.0 or higher
+- npm 10+ or yarn 1.22+
+
+### Installation
+
+1. **Clone the repository**
+   ```
+   git clone https://github.com/rajanarahul93/FormIQ.git
+   cd FormIQ
+   ```
+
+2. **Install dependencies**
+   ```
+   npm install
+   ```
+
+3. **Start development server**
+   ```
+   npm run dev
+   ```
+
+4. **Open your browser**
+   ```
+   http://localhost:5173
+   ```
+
+### Build for Production
+
+```
+npm run build
+npm run preview 
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+##  Usage Guide
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Creating Your First Form
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. **Add Fields**: Drag field types from the sidebar to the canvas
+2. **Configure Fields**: Click any field to edit properties in the right panel
+3. **Set Validation**: Add required flags, length limits, and patterns
+4. **Test Form**: Use the preview button to test your form
+5. **Export**: Choose from JSON, HTML, or React component exports
+
+### Using Templates
+
+1. Navigate to the **Templates** tab in the sidebar
+2. Browse the 5 professional templates:
+   - Contact Form
+   - User Registration
+   - Event Registration
+   - Customer Feedback
+   - Job Application
+3. Click **Use** to load any template instantly
+
+### Smart Tools
+
+- **Auto-fill**: Generate realistic test data for all fields
+- **Export Options**: Multiple format exports with one click
+- **Form Statistics**: Track field counts and requirements
+- **Reset**: Clear form and start fresh
+
+
+##  Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+### Development Guidelines
+
+- Follow TypeScript best practices
+- Use conventional commit messages
+- Add tests for new features
+- Update documentation as needed
